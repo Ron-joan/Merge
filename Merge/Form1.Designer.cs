@@ -36,6 +36,7 @@ namespace Merge
             this.button3 = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // button1
@@ -129,6 +130,7 @@ namespace Merge
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }
 

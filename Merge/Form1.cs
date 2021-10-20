@@ -59,7 +59,7 @@ namespace Merge
                 }
                 catch
                 {
-                    var warning = String.Format("这个文件：{0}，以被占用", item);
+                    var warning = String.Format("这个文件：{0}，已被占用", item);
                     MessageBox.Show(warning);
                 }
             });
@@ -87,11 +87,10 @@ namespace Merge
                 {
                     IWorkbook wb = WorkbookFactory.Create(item);
                     ExcelToDataTable(wb, allTeachersMessage);
-                    
                 }
                 catch
                 {
-                    var warning = String.Format("这个文件：{0}，以被占用", item);
+                    var warning = String.Format("这个文件：{0}，已被占用", item);
                     MessageBox.Show(warning);
                 }
             });
@@ -179,6 +178,12 @@ namespace Merge
             {
                 return;
             }
+            var currentDirectory = "";
+            folderBrowserDialog.Description = "请选择输出文件夹";
+            if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
+                currentDirectory = "C:";
+            else
+                currentDirectory = folderBrowserDialog.SelectedPath;
             var acm = from c in allClassMessage.AsEnumerable()
                       select c;
             var atm = from t in allTeachersMessage.AsEnumerable()
@@ -189,7 +194,7 @@ namespace Merge
             var DistinguishByLaboratory = from tc in all
                                                group tc by tc.t.Field<string>("所在系（或教研室）");
 
-            var currentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            
 
             foreach (var Department in DistinguishByLaboratory)
             {
@@ -221,7 +226,7 @@ namespace Merge
                 DataTableToExcel(savePath + @"/" + person.Key + ".xlsx", dt, person.Key, true);
             }
 
-
+            MessageBox.Show("转化完成");
 
         }
 
