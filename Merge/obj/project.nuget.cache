@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ftRP9V8Uw/y0it6n67n4dOTMTUtDcjcsIkh4pjuH1Wox7ZusZgVEKfr1I8bgQAQX29bcExAn58FRq8IcDBXkCA==",
+  "dgSpecHash": "khk0LK3lVvolcMnQJVzKwLPMySgygc09Yn8Wz2FQ83R4L52Fa3QLcOTv8eoout8BpxY+BZV0+Vxm9CLXahPfRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\King\\Documents\\GitHub\\Merge\\Merge\\Merge.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,11 @@
     "C:\\Users\\King\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\King\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "C:\\Users\\King\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
-    "C:\\Users\\King\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+    "C:\\Users\\King\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\King\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\King\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\King\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\King\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
